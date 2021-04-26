@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mail & Dadi</title>
     <link rel="stylesheet" href="./ASSETS/CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css "integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w== "crossorigin="anonymous" />
 </head>
 <body>
     
-    <h1 id="user_email"></h1>
+    <main>
 
+        <!-- ACCOUNT -->
+        <div class="container">
+            <h3><i class="fas fa-user"></i> Account</h3>
+            <h3 id="user_email"></h3>
+            <h3 id="user_name"></h3>
+        </div>
+        <!-- /ACCOUNT -->
 
+        <!-- HR -->
+        <div class="dice">
+            <i class="fas fa-dice"></i>
+        </div>
+        <!-- /HR -->
 
+        <!-- RESULTS -->
+        <div class="container">
+            <div class="result">
+                <h1 id="user_die"></h1>
+                <h1 id="computer_die"></h1>
+            </div>   
+            <h1 id="winner"></h1>  
+        </div>
+        <!-- /RESULTS -->
+        
+    </main>
 
     <script src="./ASSETS/JS/main.js"></script>
 </body>

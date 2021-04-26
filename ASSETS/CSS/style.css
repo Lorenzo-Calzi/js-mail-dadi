@@ -1,0 +1,74 @@
+main{
+    font-family: 'Playfair Display', serif;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    background-image: url(/IMG/background.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    color: white; 
+}
+
+/* ACCOUNT */
+.container{
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;   
+}
+.container i{
+    margin-right: 10px;
+}
+/* /ACCOUNT */
+
+/* HR */
+.dice{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.dice i{
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dice::before{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    margin-top: 20px;
+}
+.dice::after{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: white;
+    margin-top: 20px;
+}
+/* HR */
+
+/* RISULTATO */
+.result{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+#user_die{
+    width: 40%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+#computer_die{ 
+    width: 40%;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    padding: 5px;
+}
+#winner{
+    text-align: center;
+}
+/* RISULTATO */
