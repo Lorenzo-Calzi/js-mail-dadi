@@ -8,18 +8,21 @@ document.getElementById('user_name').innerHTML = 'Benevenuto ' + userName;
 
 var verifiedEmail = ["lorenzocalzi@gmail.com", "email_1@gmail.com", "email_2@gmail.com", "email_3@gmail.com", "email_4@gmail.com"];
 
+var access = false;
+
 // Controlla che sia nella lista di chi può accedere
 for (var i = 0; i < verifiedEmail.length; i++) {
     if (verifiedEmail[i] == email){
         document.getElementById('user_email').innerHTML = verifiedEmail[i] ;
-        alert('Benvenuto!')
-        break;
-    }
+        access = true;
+    } 
+}
 
-    else{
-        alert("ATTENZIONE! Non potrai riscuotere l'eventuale vincita poiché l'email inserita non è presente all'interno del nostro database.");
-        break;
-    }  
+if(access) {
+    alert('Benvenuto!')
+    
+} else {
+    alert("ATTENZIONE! Non potrai riscuotere l'eventuale vincita poiché l'email inserita non è presente all'interno del nostro database.");
 }
 
 /* /EMAIL */
